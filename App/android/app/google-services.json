@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "748989953728",
+    "project_id": "hookup4u-b9408",
+    "storage_bucket": "hookup4u-b9408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748989953728:android:68d84c2fdad562c76adf25",
+        "android_client_info": {
+          "package_name": "com.deligence.hookup4u2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT8o7Zsc-1sUrm0DCcna68fD99XFSjPdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

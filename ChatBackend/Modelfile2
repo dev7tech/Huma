@@ -1,0 +1,9 @@
+FROM "./models/dolphin-2.9-llama3-8b-q4_K_M.gguf"
+PARAMETER stop "###"
+TEMPLATE """
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+{{ .Prompt }}
+
+### Response:"""

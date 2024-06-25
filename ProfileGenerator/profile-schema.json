@@ -1,0 +1,315 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Profile",
+  "type": "object",
+  "properties": {
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "age": {
+            "type": "integer",
+            "description": "Age of the individual"
+          },
+          "gender": {
+            "type": "string",
+            "description": "Gender of the individual"
+          },
+          "location": {
+            "type": "string",
+            "description": "Location of the individual"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the individual"
+          },
+          "nationality_1": {
+            "type": "string",
+            "description": "Nationality of the individual"
+          },
+          "nationality_2": {
+            "type": "string",
+            "description": "Secondary Nationality of the individual which is optional"
+          },
+          "persona": {
+            "type": "object",
+            "properties": {
+              "ambitions": {
+                "type": "string",
+                "description": "Ambitions of the individual"
+              },
+              "behavior_traits": {
+                "type": "object",
+                "properties": {
+                  "personality_traits": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Descriptive attributes of one's personality"
+                  },
+                  "work_ethic": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Characteristics related to work habits and attitudes"
+                  },
+                  "interpersonal_skills": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Abilities and behaviors in social interactions"
+                  },
+                  "communication_style": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Preferences and tendencies in communication"
+                  },
+                  "problem_solving_approach": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Strategies and approaches to solving problems"
+                  },
+                  "leadership_style": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Characteristics related to leading others"
+                  },
+                  "adaptability": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Ability to adapt to new situations or changes"
+                  },
+                  "stress_management": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Coping mechanisms and strategies for handling stress"
+                  },
+                  "decision_making_style": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Approaches to making decisions"
+                  },
+                  "motivation": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Factors that drive behavior and action"
+                  },
+                  "emotional_intelligence": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Ability to understand and manage one's own emotions and those of others"
+                  },
+                  "networking_relationship_building": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Ability to cultivate and maintain relationships with others"
+                  },
+                  "cultural_competence_diversity_awareness": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Sensitivity to and understanding of diverse cultures, backgrounds, and perspectives"
+                  },
+                  "risk_management_decision_making": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Skill in evaluating risks and making informed decisions"
+                  },
+                  "assertiveness_conflict_resolution": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Ability to assert one's own needs and preferences while respecting others"
+                  }
+                }
+              },
+              "hobbies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Hobbies of the individual"
+              }
+            }
+          },
+          "friends": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the friend"
+                },
+                "age": {
+                  "type": "integer",
+                  "description": "Age of the friend"
+                },
+                "gender": {
+                  "type": "string",
+                  "description": "Gender of the friend"
+                },
+                "relationship": {
+                  "type": "string",
+                  "description": "Relationship with the friend (e.g., close friend, acquaintance)"
+                }
+              },
+              "required": ["name", "age", "gender", "relationship"]
+            },
+            "description": "List of friends and their attributes"
+          },
+          "family": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the family member"
+                },
+                "age": {
+                  "type": "integer",
+                  "description": "Age of the family member"
+                },
+                "gender": {
+                  "type": "string",
+                  "description": "Gender of the family member"
+                },
+                "relationship": {
+                  "type": "string",
+                  "description": "Relationship with the family member (e.g., parent, sibling, cousin)"
+                }
+              },
+              "required": ["name", "age", "gender", "relationship"]
+            },
+            "description": "List of family members and their attributes"
+          },
+          "pets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the pet"
+                },
+                "species": {
+                  "type": "string",
+                  "description": "Species of the pet"
+                },
+                "breed": {
+                  "type": "string",
+                  "description": "Breed of the pet"
+                },
+                "age": {
+                  "type": "integer",
+                  "description": "Age of the pet"
+                }
+              },
+              "required": ["name", "species", "age"]
+            },
+            "description": "List of pets owned by the individual"
+          },
+          "physical_traits": {
+            "type": "object",
+            "properties": {
+              "hair_color": {
+                "type": "string",
+                "description": "Color of the hair"
+              },
+              "eyes_color": {
+                "type": "string",
+                "description": "Color of the eyes"
+              },
+              "eyes_shape": {
+                "type": "string",
+                "description": "Shape of the eyes"
+              },
+              "build": {
+                "type": "string",
+                "description": "Build or physique of the individual"
+              },
+              "smile": {
+                "type": "string",
+                "description": "Description of the individual's smile"
+              },
+              "body_art": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Description of body art on the individual's body (e.g., tattoos, piercings)"
+              },
+              "body_peculiarities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Peculiarities or unique features of the individual's body"
+              }
+            },
+            "required": ["hair_color", "eyes_color", "build", "smile"]
+          },
+          "physical_description": {
+            "type": "string",
+            "description": "Physical description of the individual"
+          },
+          "behavioral_description": {
+            "type": "string",
+            "description": "Behavioral description of the individual"
+          },
+          "dress_style": {
+            "type": "string",
+            "description": "Dress style of the individual"
+          },
+          "race": {
+            "type": "string",
+            "description": "Race of the individual"
+          }
+        },
+        "required": [
+          "age",
+          "gender",
+          "location",
+          "name",
+          "nationality_1",
+          "persona",
+          "friends",
+          "family",
+          "pets",
+          "physical_traits",
+          "physical_description",
+          "behavioral_description",
+          "dress_style",
+          "race"
+        ]
+      }
+    }
+  }
+}

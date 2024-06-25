@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "hookup4u-main"
+  },
+  "targets": {
+    "hookup4u-main": {
+      "hosting": {
+        "main": [
+          "hookup4u-main"
+        ],
+        "test": [
+          "hookup-main-test"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
